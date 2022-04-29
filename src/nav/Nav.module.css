@@ -1,0 +1,7 @@
+.nav {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    flex-wrap: wrap;
+}

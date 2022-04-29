@@ -1,0 +1,20 @@
+.mainBlock {
+    /*min-height: 100vh;*/
+    background-color: #fee2f0;
+}
+
+.greeting {
+    width: 300px;
+    background-color: white;
+    text-align: center;
+}
+.greeting span,p {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: lightgoldenrodyellow;
+}

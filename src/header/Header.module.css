@@ -1,0 +1,11 @@
+.header {
+    height: 80px;
+    background-color: #c4fef9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+}

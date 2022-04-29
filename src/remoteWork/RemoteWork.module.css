@@ -1,0 +1,21 @@
+.remoteWork {
+    /*min-height: 20vh;*/
+    background-color: #d2cffe;
+}
+
+.remoteWorkContainer {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+}
+
+.link {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #c4fef9;
+    margin-top: 20px;
+}
