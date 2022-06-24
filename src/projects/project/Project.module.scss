@@ -1,0 +1,64 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.project {
+  width: 330px;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .icon {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      opacity: 0.2;
+    }
+
+    .iconButton {
+      position: relative;
+      font-size: 20px;
+      background-color: $bgThirdColor;
+      color: $textColor;
+      padding: 5px 10px;
+      z-index: 1
+    }
+  }
+
+  .projectInfo {
+    padding: 15px 10px;
+
+    .titleProject {
+      @include text(1.3125rem, 0, 0.5rem, 1.2, $textColor);
+      font-family: $fontFamily;
+      font-weight: 500;
+    }
+
+    .description {
+      @include text(1rem, 0, 1rem, 1.8, $textDescription !important);
+      font-family: $fontFamily;
+      visibility: visible;
+    }
+
+  }
+}
+
+
+
+

@@ -1,0 +1,41 @@
+@import '../common/styles/sass/variables.scss';
+
+.mainBlock {
+  /*min-height: 100vh;*/
+  background-color: $bgFourColor;
+  .mainContainer {
+    border: 1px solid;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: 753px) {
+      justify-content: center;
+    }
+    .greeting {
+      width: 300px;
+      background-color: white;
+      text-align: center;
+      span, p {
+        font-size: 20px;
+        font-weight: bolder;
+      }
+    }
+    .photo {
+      width: 400px;
+      height: 400px;
+      background-image: url("../assets/image/photo.jpg");
+      background-size: cover;
+      background-position: center;
+
+    }
+  }
+}
+
+
+
+
+

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './Contacts.module.css'
+import styles from './Contacts.module.scss'
 import styleContainer from "../common/styles/Container.module.css";
 
 const Contacts = () => {
@@ -11,8 +11,8 @@ const Contacts = () => {
                     <input/>
                     <input/>
                     <textarea cols="30" rows="5"></textarea>
+                    <button type='submit' className={styles.link}>Submit</button>
                 </form>
-                <a className={styles.link} href="">Submit</a>
             </div>
         </div>
     );

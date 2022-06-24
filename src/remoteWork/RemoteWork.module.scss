@@ -1,0 +1,60 @@
+@import '../common/styles/sass/variables.scss';
+@import '../common/styles/sass/mixins.scss';
+
+.remoteWork {
+  min-height: 30vh;
+  background-image: url(../assets/image/pexels-photo-265667.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.5;
+  }
+  .remoteWorkContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      position: relative;
+      margin-bottom: 0.5em !important;
+      margin-top: 1.5em !important;
+      text-align: center;
+      @include text(2.5rem, 0, 0.5rem, 1.2, $primaryColor);
+      font-family: $fontFamily;
+      font-weight: 600;
+      z-index: 1;
+    }
+    .link {
+      position: relative;
+      font-size: 1.5em;
+      text-decoration: none;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+      background-color: $bgThirdColor;
+      border-color: $bgThirdColor;
+      color: $textColor;
+      padding: 0.8rem 2.6rem;
+      font-weight: 500;
+      line-height: 1.5;
+      text-align: center;
+      cursor: pointer;
+      z-index: 1;
+    }
+  }
+}
+
+
+
+
+
+

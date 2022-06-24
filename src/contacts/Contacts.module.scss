@@ -1,0 +1,40 @@
+@import "../common/styles/sass/variables";
+.contactsBlock {
+    /*min-height: 20vh;*/
+    background-color: $bgFourColor;
+    .contactsContainer {
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+            background-color: white;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width:50%;
+            height: 130px;
+            margin-bottom: 20px;
+            @media screen and (max-width:500px){
+                    width: 90%;
+            }
+
+            .link {
+                font-size: 20px;
+                background-color: white;
+                text-decoration: none;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

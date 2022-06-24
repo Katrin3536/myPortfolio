@@ -1,0 +1,10 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+.title {
+        @include text(2rem, 0, 3rem!important, 1.2, $textColor);
+        font-family: $fontFamily;
+        font-weight: 600;
+        text-align: center!important;
+
+}
+
