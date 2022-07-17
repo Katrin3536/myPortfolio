@@ -1,0 +1,50 @@
+@import '../../styles/sass/variables';
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  background-color: $bgThirdColor;
+  color: black;
+  font-weight: 600;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: $bgThirdColor;
+}
+
+.container {
+  width: 40%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.col {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

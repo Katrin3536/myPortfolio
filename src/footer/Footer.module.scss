@@ -3,7 +3,6 @@
 .footerBlock {
   /*min-height: 20vh;*/
   background-color: $bgThirdColor;
-
   .footerContainer {
     flex-direction: column;
     justify-content: space-between;
@@ -16,15 +15,16 @@
     .footer {
       display: flex;
       justify-content: space-between;
-      width: 280px;
-      border: 1px solid;
+      width: 250px;
       margin-top: 5px;
       margin-bottom: 5px;
 
       .footerElements{
         width: 30px;
         height: 30px;
-        background-color: darkgrey;
+        background-size:cover;
+        background-repeat: no-repeat;
+
       }
     }
   }

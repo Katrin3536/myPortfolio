@@ -1,0 +1,12 @@
+@import '../common/styles/sass/mixins';
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    .link{
+        @include text(1.2rem, 0, 0.5rem, 1.2, $textColor);
+        font-weight: 600;
+    }
+}

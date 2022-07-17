@@ -6,8 +6,8 @@ function RemoteWork() {
     return (
         <div className={styles.remoteWork}>
             <div className={styles.remoteWorkContainer}>
-                <h3 className={styles.title}>I'm considering remote work options</h3>
-                <a className={styles.link} href="">Hire me</a>
+                <h3 className={styles.title}>I'M CONSIDERING REMOTE WORK OPTIONS</h3>
+                <a className={styles.link} href="">HIRE ME</a>
             </div>
         </div>
     );

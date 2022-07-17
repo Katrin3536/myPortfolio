@@ -6,9 +6,9 @@ const Main = () => {
         <div className={styles.mainBlock}>
             <div className={styles.mainContainer}>
                 <div className={styles.greeting}>
-                    <span>Hi There!</span>
-                    <h1>I am Ekaterina Dudko</h1>
-                    <p>Frontend developer</p>
+                    <span>HELLO, MY NAME IS</span>
+                    <h1>EKATERINA DUDKO</h1>
+                    <p>I'M FRONT-END DEVELOPER</p>
                 </div>
                 <div className={styles.photo}>
                 </div>

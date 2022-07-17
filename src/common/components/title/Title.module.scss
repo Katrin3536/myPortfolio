@@ -1,0 +1,22 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/mixins';
+.title {
+        @include text(2rem, 0, 3rem, 1.2, $textColor);
+        font-family: $fontFamily;
+        font-weight: 600;
+        text-align: center!important;
+        position: relative;
+        ::before {
+                content:'';
+                width: 120px;
+                height: 2px;
+                background: black;
+                position: absolute;
+                bottom: 25px;
+                left: 50%;
+                transform: translate(-50%, 50%);
+
+        }
+
+}
+

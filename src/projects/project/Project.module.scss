@@ -3,11 +3,25 @@
 
 .project {
   width: 330px;
-  background-color: $bgColor;
+  background-color: $primaryColor;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  box-shadow: 0 1px 5px rgba(5, 5, 6, 0.15);
+  transition: all .3s ease 0s;
+  margin-bottom: 20px;
+  &:hover {
+    box-shadow: 0 1px 5px rgba(5, 5, 6, 0.95);
+  }
+
+  &:hover {
+    .icon {
+      .iconButton {
+        visibility: visible;
+      }
+    }
+  }
 
   .icon {
     position: relative;
@@ -28,16 +42,20 @@
       bottom: 0;
       right: 0;
       left: 0;
-      opacity: 0.2;
+      opacity: 0.4;
     }
 
     .iconButton {
+      background-color: $bgThirdColor;
       position: relative;
       font-size: 20px;
-      background-color: $bgThirdColor;
-      color: $textColor;
+      color:#212529;
       padding: 5px 10px;
-      z-index: 1
+      z-index: 1;
+      border-radius: 10px;
+      font-weight: 500;
+      text-decoration: none;
+      visibility: hidden;
     }
   }
 

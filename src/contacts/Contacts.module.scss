@@ -1,33 +1,35 @@
 @import "../common/styles/sass/variables";
-.contactsBlock {
-    /*min-height: 20vh;*/
-    background-color: $bgFourColor;
-    .contactsContainer {
-        flex-direction: column;
-        justify-content: space-between;
-        .title {
-            background-color: white;
-        }
-        .form {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width:50%;
-            height: 130px;
-            margin-bottom: 20px;
-            @media screen and (max-width:500px){
-                    width: 90%;
-            }
+@import '../common/styles/sass/mixins';
 
-            .link {
-                font-size: 20px;
-                background-color: white;
-                text-decoration: none;
-                margin: 0 auto;
-                margin-top: 10px;
-            }
-        }
+.contactsBlock {
+  /*min-height: 20vh;*/
+  background-color: $bgColor;
+
+  .contactsContainer {
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    ::before {
+      content: '';
+      width: 120px;
+      height: 2px;
+      background: black;
+      position: absolute;
+      bottom: 410px;
+      left: 50%;
+      transform: translate(-50%, 50%);
     }
+
+    .title {
+      @include text(2.5rem, 0, 3rem, 1.2, $textColor);
+      font-family: $fontFamily;
+      font-weight: 700;
+      margin-bottom: 1.0em !important;
+      margin-top: 1.0em !important;
+      text-align: center;
+    }
+  }
 }
 
 
