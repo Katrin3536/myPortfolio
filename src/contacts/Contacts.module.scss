@@ -10,17 +10,6 @@
     justify-content: space-between;
     position: relative;
 
-    ::before {
-      content: '';
-      width: 120px;
-      height: 2px;
-      background: black;
-      position: absolute;
-      bottom: 410px;
-      left: 50%;
-      transform: translate(-50%, 50%);
-    }
-
     .title {
       @include text(2.5rem, 0, 3rem, 1.2, $textColor);
       font-family: $fontFamily;
@@ -28,6 +17,18 @@
       margin-bottom: 1.0em !important;
       margin-top: 1.0em !important;
       text-align: center;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 120px;
+        height: 2px;
+        background: black;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
     }
   }
 }

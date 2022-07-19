@@ -3,7 +3,7 @@ import styles from './Main.module.scss'
 
 const Main = () => {
     return (
-        <div className={styles.mainBlock}>
+        <div id={'main'} className={styles.mainBlock}>
             <div className={styles.mainContainer}>
                 <div className={styles.greeting}>
                     <span>HELLO, MY NAME IS</span>

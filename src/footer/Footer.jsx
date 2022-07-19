@@ -1,33 +1,34 @@
 import React from "react";
 import styles from './Footer.module.scss'
 import styleContainer from "../common/styles/Container.module.css";
-import e_mail from "../assets/image/gmail.png";
-import linkd from "../assets/image/linkedin.png";
-import telegram from "../assets/image/telegram.png";
-import whatsapp from "../assets/image/whatsapp.png";
+import emailIcon from "../assets/image/email.png";
+import linkedinIcon from "../assets/image/linkedin.png";
+import telegramIcon from "../assets/image/telegram.png";
+import whatsappIcon from "../assets/image/whatsapp.png";
 
 function Footer() {
     const email = {
-        backgroundImage: `url(${e_mail})`,
+        backgroundImage: `url(${emailIcon})`,
     };
     const linkedin = {
-        backgroundImage: `url(${linkd})`,
+        backgroundImage: `url(${linkedinIcon})`,
     };
-    const telegramm = {
-        backgroundImage: `url(${telegram})`,
+    const telegram = {
+        backgroundImage: `url(${telegramIcon})`,
     };
-    const whatsup = {
-        backgroundImage: `url(${whatsapp})`,
+    const whatsapp = {
+        backgroundImage: `url(${whatsappIcon})`,
     };
     return (
         <div className={styles.footerBlock}>
             <div className={`${styleContainer.container} ${styles.footerContainer}`}>
                 <h3 className={styles.title}>Ekaterina Dudko</h3>
                 <div className={styles.footer}>
-                    <div style={telegramm} className={styles.footerElements}></div>
-                    <div style={linkedin} className={styles.footerElements}></div>
-                    <div style={email} className={styles.footerElements}></div>
-                    <div style={whatsup} className={styles.footerElements}></div>
+                    <a href={'https://t.me/Kate3536'} style={telegram} className={styles.footerElements}/>
+                    <a href={'http://linkedin.com/in/ekaterina-dudko-8281a7232'} style={linkedin}
+                       className={styles.footerElements}/>
+                    <a href={'mailto:dudko.katerina86@gmail.com'} style={email} className={styles.footerElements}/>
+                    <a href={' https://wa.me/375297513774'} style={whatsapp} className={styles.footerElements}/>
                 </div>
                 <span>©2022 All rights reserved</span>
             </div>

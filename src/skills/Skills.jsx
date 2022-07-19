@@ -22,7 +22,7 @@ const Skills = () => {
         backgroundImage: `url(${designIcon})`,
     };
     return (
-        <div className={styles.skillsBlock}>
+        <div id={'skills'} className={styles.skillsBlock}>
             <div className={`${styleContainer.container} ${styles.skillsContainer}`}>
                 <Title text={'MY SKILLS'}/>
                 <div className={styles.skills}>

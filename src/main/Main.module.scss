@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   margin-top: 80px;
+
   .mainContainer {
     width: 80%;
     height: 100%;
@@ -17,15 +18,18 @@
     @media screen and (max-width: 753px) {
       justify-content: center;
     }
+
     .greeting {
       width: 600px;
       background-color: $bgFourColor;
       text-align: center;
+
       span, p {
         font-size: 25px;
         font-weight: bolder;
         margin-top: 10px;
       }
+
       h1 {
         font-size: 60px;
         font-weight: bolder;
@@ -33,6 +37,7 @@
         color: $bgThirdColor;
       }
     }
+
     .photo {
       width: 500px;
       height: 500px;

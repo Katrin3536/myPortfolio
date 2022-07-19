@@ -7,6 +7,7 @@ import socialNetImage from "../assets/image/Social-network.webp"
 import todoImage from "../assets/image/todolist.jpg"
 import counterImage from "../assets/image/counter.webp"
 import cardsImage from "../assets/image/cards.jpg"
+import futureImage from "../assets/image/future.avif"
 
 
 function Projects() {
@@ -22,19 +23,33 @@ function Projects() {
     const cards = {
         backgroundImage: `url(${cardsImage})`,
     };
-return (
-    <div className={styles.projectsBlock}>
-        <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
-          <Title text={'MY PROJECTS'}/>
-            <div className={styles.projects}>
-                <Project style={socialNetwork} title = {"Social Network"} description={"TS, Redux, RestAPI, Thunk, ANT Design, Unit-Tests"}/>
-                <Project style={todolist} title = {"ToDoList"} description={"TS, Redux, RestAPI, Thunk,Material UI, Unit-Tests"}/>
-                <Project style={counter} title = {"Counter"} description={"My first project with React /Redux /TS etc"}/>
-                <Project style={cards} title = {"Training cards"} description={"It was a command work. App for learning some cards"}/>
+    const future = {
+        backgroundImage: `url(${futureImage})`,
+    };
+    return (
+        <div id={'projects'} className={styles.projectsBlock}>
+            <div className={`${styleContainer.container} ${styles.projectsContainer}`}>
+                <Title text={'MY PROJECTS'}/>
+                <div className={styles.projects}>
+                    <Project style={socialNetwork} title={"Social Network"}
+                             description={"TS, Redux, RestAPI, Thunk, ANT Design, Unit-Tests"}
+                             href={'https://katrin3536.github.io/samurai-way-main'}/>
+                    <Project style={todolist} title={"ToDoList"}
+                             description={"TS, Redux, RestAPI, Thunk,Material UI, Unit-Tests"}
+                             href={'https://katrin3536.github.io/todolist'}/>
+                    <Project style={counter} title={"Counter"}
+                             description={"My first project with React /Redux /TS etc"}
+                             href={'https://katrin3536.github.io/counters'}/>
+                    <Project style={cards} title={"Training cards"}
+                             description={"It was a command work. App for learning some cards"}
+                             href={'https://katrin3536.github.io/cards'}/>
+                    <Project style={future} title={"Future project"} description={"In progress"}
+                             href={''}/>
+                    <Project style={future} title={"Future project"} description={"In progress"} href={''}/>
+                </div>
             </div>
         </div>
-    </div>
-);
+    );
 }
 
 export default Projects;
