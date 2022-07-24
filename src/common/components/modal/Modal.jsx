@@ -1,8 +1,8 @@
 import React, {useRef, useState} from 'react';
 import styles from './Modal.module.scss'
 import {useForm} from "react-hook-form";
-import {useEscapeKey, useOnClickOutside} from "../../utils/utils";
 import axios from "axios";
+import {useEscapeKey, useOnClickOutside} from "../../utils/utils";
 
 
 const Modal = ({onClose}) => {
@@ -13,12 +13,10 @@ const Modal = ({onClose}) => {
 
     const {register, handleSubmit, formState: {errors}} = useForm();
     const onSubmit = (data, e) => {
-        console.log("onsubmit", data)
         setBtnDisable(true)
         axios.post("https://smtp-nodejss.herokuapp.com/sendForm", {data})
             .then((res) => {
                 onClose()
-
             });
         e.target.reset()
     }
@@ -47,9 +45,13 @@ const Modal = ({onClose}) => {
                 </div>
                 <div className={styles.row}>
                     <div className={styles.col}>
-                        <input {...register("email", {required: true})} type="text" id="email"
+                        <input {...register("email", {
+                            required: true,
+                            pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
+                        })}
+                               type="text" id="email"
                                placeholder="Your email..."/>
-                        {errors.email && <span>This field is required</span>}
+                        {errors.email && <span>Please, check your email address</span>}
                     </div>
                 </div>
                 <div className={styles.row}>

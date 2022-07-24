@@ -27,9 +27,12 @@ const Form = () => {
                 </div>
                 <div className={styles.row}>
                     <div className={styles.col}>
-                        <input {...register("email", {required: true})} type="text" id="email"
+                        <input {...register("email", {
+                            required: true,
+                            pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i
+                        })} type="text" id="email"
                                placeholder="Your email.."/>
-                        {errors.email && <span>This field is required</span>}
+                        {errors.email && <span>Please, check your email address</span>}
                     </div>
                 </div>
                 <div className={styles.row}>
