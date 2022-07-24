@@ -15,7 +15,7 @@ const Modal = ({onClose}) => {
     const onSubmit = (data, e) => {
         console.log("onsubmit", data)
         setBtnDisable(true)
-        axios.post("https:/smtp-nodejss.herokuapp.com/sendForm", {data})
+        axios.post("https://smtp-nodejss.herokuapp.com/sendForm", {data})
             .then((res) => {
                 onClose()
 
