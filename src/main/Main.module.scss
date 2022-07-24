@@ -45,6 +45,10 @@
       background-image: url("../assets/image/photo.jpg");
       background-size: cover;
       background-position: center;
+      @media screen and (max-width: 611px) {
+        height: unset;
+        padding-bottom: 100%;
+      }
     }
   }
 }

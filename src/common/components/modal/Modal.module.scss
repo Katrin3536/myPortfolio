@@ -24,12 +24,41 @@ input[type=submit]:hover {
 }
 
 .container {
-  min-width: 400px;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 100000;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 500px) {
+    min-width: 300px;
+  }
+}
+
+.buttonClose {
+  float: right;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  &:hover {
+    border: 1px solid #33a3b6;
+    background-color: lighten($bgThirdColor, 10%);
+  }
+}
+
+.form {
+  padding: 20px;
+  width: 400px;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: #ccc;
-  padding: 20px;
-  margin-bottom: 20px;
+  background-color: #e6e6e6;
+  margin: 0 auto;
+
   @media screen and (max-width: 500px) {
     min-width: 300px;
   }
@@ -46,9 +75,9 @@ input[type=submit]:hover {
   clear: both;
 }
 
-//@media screen and (max-width: 600px) {
-//  .col, input[type=submit] {
-//    width: 100%;
-//    margin-top: 0;
-//  }
-//}
+@media screen and (max-width: 600px) {
+  .col, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

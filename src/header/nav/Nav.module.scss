@@ -30,4 +30,8 @@
     box-shadow: 0 1px 3px rgba(5, 5, 6, 0.45);
     transition: all .3s ease 0s;
   }
+
+  @media screen and (max-width: 430px) {
+    display: none;
+  }
 }

@@ -1,34 +1,53 @@
-import React, {useState} from 'react';
-import styles from './Form.module.scss'
+import React, {useRef, useState} from 'react';
+import styles from './Modal.module.scss'
 import {useForm} from "react-hook-form";
+import {useEscapeKey, useOnClickOutside} from "../../utils/utils";
 import axios from "axios";
 
-const Form = () => {
+
+const Modal = ({onClose}) => {
     const [btnDisable, setBtnDisable] = useState(false);
+    const ref = useRef();
+    useOnClickOutside(ref, onClose);
+    useEscapeKey(onClose);
+
     const {register, handleSubmit, formState: {errors}} = useForm();
     const onSubmit = (data, e) => {
         setBtnDisable(true)
-        axios.post("https://smtp-nodejss.herokuapp.com/sendMessage", {data})
+        axios.post("https:/smtp-nodejss.herokuapp.com/sendForm", {data})
             .then((res) => {
-                // alert("Your message has been send");
-                setBtnDisable(false)
+                onClose()
+
             });
         e.target.reset()
     }
 
     return (
         <div className={styles.container}>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form
+                onSubmit={handleSubmit(onSubmit)}
+                className={styles.form}
+                ref={ref}
+            >
+                <button className={styles.buttonClose} onClick={onClose}>X</button>
                 <div className={styles.row}>
                     <div className={styles.col}>
-                        <input {...register("name", {required: true})} type="text" id="name" placeholder="Your name.."/>
+                        <input {...register("name", {required: true})} type="text" id="name"
+                               placeholder="Your name..."/>
                         {errors.name && <span>This field is required</span>}
                     </div>
                 </div>
                 <div className={styles.row}>
                     <div className={styles.col}>
+                        <input {...register("company", {required: true})} type="text" id="company"
+                               placeholder="Your company..."/>
+                        {errors.company && <span>This field is required</span>}
+                    </div>
+                </div>
+                <div className={styles.row}>
+                    <div className={styles.col}>
                         <input {...register("email", {required: true})} type="text" id="email"
-                               placeholder="Your email.."/>
+                               placeholder="Your email..."/>
                         {errors.email && <span>This field is required</span>}
                     </div>
                 </div>
@@ -47,7 +66,7 @@ const Form = () => {
     )
 };
 
-export default Form;
+export default Modal;
 
 
 
