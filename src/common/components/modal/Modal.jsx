@@ -13,6 +13,7 @@ const Modal = ({onClose}) => {
 
     const {register, handleSubmit, formState: {errors}} = useForm();
     const onSubmit = (data, e) => {
+        console.log("onsubmit", data)
         setBtnDisable(true)
         axios.post("https:/smtp-nodejss.herokuapp.com/sendForm", {data})
             .then((res) => {

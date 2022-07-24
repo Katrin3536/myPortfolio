@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styles from './NavBar.module.scss'
 import {Link} from "react-scroll"
+import menu from '../../assets/image/list.png'
 
 
 function NavBar() {
@@ -51,7 +52,9 @@ function NavBar() {
                     spyThrottle={500}
                 >CONTACTS</Link>
             </div>
-            <div onClick={toggleMenu} className={styles.btn}>12</div>
+            <div className={styles.btn} onClick={toggleMenu}>
+                <img src={menu} className={styles.icon}></img>
+            </div>
         </div>
     );
 }
