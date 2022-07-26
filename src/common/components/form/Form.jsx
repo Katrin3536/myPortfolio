@@ -3,17 +3,20 @@ import styles from './Form.module.scss'
 import {useForm} from "react-hook-form";
 import axios from "axios";
 
-const Form = () => {
+const Form = ({openModal, setStatus}) => {
     const [btnDisable, setBtnDisable] = useState(false);
-    const {register, handleSubmit, formState: {errors}} = useForm();
-    const onSubmit = (data, e) => {
+
+    const {register, handleSubmit, reset, formState: {errors}} = useForm();
+    const onSubmit = (data) => {
+        setStatus('loading')
         setBtnDisable(true)
         axios.post("https://smtp-nodejss.herokuapp.com/sendMessage", {data})
             .then((res) => {
-                // alert("Your message has been send");
+                setStatus('message')
+                openModal()
                 setBtnDisable(false)
             });
-        e.target.reset()
+        reset()
     }
 
     return (

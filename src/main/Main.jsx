@@ -1,5 +1,6 @@
 import React from "react";
 import styles from './Main.module.scss'
+import ReactTypingEffect from 'react-typing-effect'
 
 const Main = () => {
     return (
@@ -8,7 +9,13 @@ const Main = () => {
                 <div className={styles.greeting}>
                     <span>HELLO, MY NAME IS</span>
                     <h1>EKATERINA DUDKO</h1>
-                    <p>I'M FRONT-END DEVELOPER</p>
+                    <ReactTypingEffect
+                        text={"I'M FRONT-END DEVELOPER"}
+                        typingDelay={1000}
+                        speed={150}
+                        eraseDelay={1500}
+                    />
+                    {/*<p>I'M FRONT-END DEVELOPER</p>*/}
                 </div>
                 <div className={styles.photo}>
                 </div>

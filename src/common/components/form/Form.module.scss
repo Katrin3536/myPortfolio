@@ -24,14 +24,14 @@ input[type=submit]:hover {
 }
 
 .container {
-  min-width: 400px;
+  width: 400px;
   box-sizing: border-box;
   border-radius: 5px;
   background-color: #ccc;
   padding: 20px;
   margin-bottom: 20px;
   @media screen and (max-width: 500px) {
-    min-width: 300px;
+    width: 300px;
   }
 }
 
@@ -46,9 +46,3 @@ input[type=submit]:hover {
   clear: both;
 }
 
-//@media screen and (max-width: 600px) {
-//  .col, input[type=submit] {
-//    width: 100%;
-//    margin-top: 0;
-//  }
-//}

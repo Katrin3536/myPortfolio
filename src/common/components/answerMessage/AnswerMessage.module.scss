@@ -1,0 +1,53 @@
+@import '../../styles/sass/variables';
+
+.container {
+  z-index: 100000;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .modal {
+    width: 450px;
+    height: 170px;
+    border: 1px solid darken($bgThirdColor, 10%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: stretch;
+    background-color: #42b2c5;
+    @media screen and (max-width: 450px) {
+      width: 250px;
+    }
+
+    .text {
+      font-size: 1.5em;
+      margin: 20px 30px 10px 10px;
+      text-align: center;
+    }
+
+    .buttonClose {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 20px;
+      margin-top: 20px;
+
+      &:hover {
+        border: 1px solid #33a3b6;
+        background-color: lighten($bgThirdColor, 10%);
+      }
+    }
+  }
+}
+
+
+
+
+

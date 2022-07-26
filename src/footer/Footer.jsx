@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Footer.module.scss'
-import styleContainer from "../common/styles/Container.module.css";
+import styleContainer from "../common/styles/Container.module.scss";
 import emailIcon from "../assets/image/email.png";
 import linkedinIcon from "../assets/image/linkedin.png";
 import telegramIcon from "../assets/image/telegram.png";
