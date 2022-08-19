@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/myPortfolio/static/css/main.80f05cc6.css",
-    "main.js": "/myPortfolio/static/js/main.99ba4850.js",
+    "main.js": "/myPortfolio/static/js/main.c34f5a1e.js",
     "static/js/787.128fc6e9.chunk.js": "/myPortfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/cards.jpg": "/myPortfolio/static/media/cards.c5557e247c4749692805.jpg",
     "static/media/Social-network.webp": "/myPortfolio/static/media/Social-network.e25d5f2a4300e79bd7d8.webp",
+    "static/media/future.jpg": "/myPortfolio/static/media/future.28e8f1ad6513feb6a92f.jpg",
     "static/media/preloader.gif": "/myPortfolio/static/media/preloader.0f8e3ead3dcf6f8b6f69.gif",
     "static/media/photo.jpg": "/myPortfolio/static/media/photo.fe7de4844e63df740456.jpg",
     "static/media/pexels-photo-265667.jpeg": "/myPortfolio/static/media/pexels-photo-265667.f93769c3e8665c816e74.jpeg",
-    "static/media/future.avif": "/myPortfolio/static/media/future.cf2d42cc90d7378585f9.avif",
     "static/media/todolist.jpg": "/myPortfolio/static/media/todolist.0c07657b4d7ad744ce4d.jpg",
     "static/media/coding.png": "/myPortfolio/static/media/coding.5b8dbc13adb163e8022e.png",
     "static/media/web-design.png": "/myPortfolio/static/media/web-design.f721d6300da36dde4a81.png",
@@ -21,11 +21,11 @@
     "static/media/linkedin.png": "/myPortfolio/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/myPortfolio/index.html",
     "main.80f05cc6.css.map": "/myPortfolio/static/css/main.80f05cc6.css.map",
-    "main.99ba4850.js.map": "/myPortfolio/static/js/main.99ba4850.js.map",
+    "main.c34f5a1e.js.map": "/myPortfolio/static/js/main.c34f5a1e.js.map",
     "787.128fc6e9.chunk.js.map": "/myPortfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.80f05cc6.css",
-    "static/js/main.99ba4850.js"
+    "static/js/main.c34f5a1e.js"
   ]
 }
