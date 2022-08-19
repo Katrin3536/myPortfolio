@@ -7,7 +7,7 @@ import socialNetImage from "../assets/image/Social-network.webp"
 import todoImage from "../assets/image/todolist.jpg"
 import counterImage from "../assets/image/counter.webp"
 import cardsImage from "../assets/image/cards.jpg"
-import futureImage from "../assets/image/future.avif"
+import futureImage from "../assets/image/future.jpg"
 
 
 function Projects() {
