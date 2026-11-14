@@ -1,8 +1,8 @@
-import React from "react";
-import styles from './Project.module.scss'
+import React from 'react';
+import styles from './Project.module.scss';
 
 function Project(props) {
-    console.log('props', props)
+
     return (
         !props.hideButton
             ? <div className={styles.project}>

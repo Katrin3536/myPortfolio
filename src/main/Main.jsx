@@ -12,7 +12,7 @@ const Main = () => {
                     <ReactTypingEffect
                         text={"I'M FRONT-END DEVELOPER"}
                         typingDelay={1000}
-                        speed={150}
+                        speed={110}
                         eraseDelay={1500}
                     />
                     {/*<p>I'M FRONT-END DEVELOPER</p>*/}

@@ -27,7 +27,7 @@ const Skills = () => {
                 <Title text={'MY SKILLS'}/>
                 <div className={styles.skills}>
                     <Skill icon={development} title={'DEVELOPMENT'}
-                           description={'React, Redux, AXIOS, REST-API etc'}/>
+                           description={'React, Redux Toolkit, Redux Query, Next.js etc'}/>
                     <Skill icon={foundation} title={"FOUNDATION"}
                            description={'Javascript, Typescript, GIT, HTML5, CSS3, SASS etc'}/>
                     <Skill icon={testing} title={"TESTING"}

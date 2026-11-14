@@ -3,6 +3,7 @@
 .projectsBlock {
   /*min-height: 100vh;*/
   background-color: $bgFourColor;
+  padding-bottom: 32px;
 
   .projectsContainer {
     flex-direction: column;
@@ -11,7 +12,7 @@
     .projects {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
       align-items: flex-start;
       @media screen and (max-width: 828px) {
@@ -20,4 +21,3 @@
     }
   }
 }
-
